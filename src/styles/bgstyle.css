@@ -1,0 +1,23 @@
+  html { 
+  background: url(../images/travel.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+* {
+	
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 10px;
+    width: 40%;
+ 	margin: auto;
+}
+.wrapper{
+	width: 80%;
+	margin: 0 auto;
+	text-align: center;
+}

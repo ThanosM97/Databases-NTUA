@@ -1,0 +1,348 @@
+
+html { 
+  background: url(../images/travel.jpeg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial;
+    padding: 1% 0;
+    background: #f1f1f1;
+    background: url(../images/travel.jpeg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+  background-size: cover;
+}
+
+/* Header/Blog Title */
+.header {
+    padding: 1.5625%;
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* Style the top navigation bar */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    z-index: 1;
+}
+.topnav-right{
+float:right;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+ .btn-group .button {
+    background-color: #333;
+    border: none;
+    color: #f2f2f2;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    float: left;
+}
+
+.btn-group .button:hover {
+    background-color: #3e8e41;
+}
+
+
+
+/* Change color on hover */
+.btn-group .button:hove:not(.active) {
+    background-color: #ddd;
+    color: black;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+
+table {
+    width:100%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 15px;
+    text-align: center;
+    vertical-align:middle;
+}
+table tr:nth-child(even) {
+    background-color: #eee;
+}
+table tr:nth-child(odd) {
+   background-color: #fff;
+}
+table th {
+    background-color: #333;
+    color: white;
+}
+
+.newspaper {
+	-webkit-column-count: 3;
+	-moz-column-count:3;
+	column-count:3;
+	color:white;
+}
+
+
+
+.slidecontainer {
+    width: 100%; /* Width of the outside container */
+}
+
+/* The slider itself */
+.slider {
+    -webkit-appearance: none;  /* Override default CSS styles */
+    appearance: none;
+    width: 100%; /* Full-width */
+    height: 25px; /* Specified height */
+    background: white; /* Grey background */
+    outline: none; /* Remove outline */
+    opacity: 0.7; /* Set transparency (for mouse-over effects on hover) */
+    -webkit-transition: .2s; /* 0.2 seconds transition on hover */
+    transition: opacity .2s;
+}
+
+/* Mouse-over effects */
+.slider:hover {
+    opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */ 
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #616161; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+
+.slider::-moz-range-thumb {
+    width: 25px; /* Set a specific slider handle width */
+    height: 25px; /* Slider handle height */
+    background: #616161; /* Green background */
+    cursor: pointer; /* Cursor on hover */
+}
+#Check-in{
+	width: 48%;
+}
+#Check-out{
+	width: 48%;
+}
+#adults{
+	width: 48%;
+}
+#children{
+	width: 48%;
+}
+#location{
+	margin-left: 1.5%;
+	width: 94%;
+}
+
+#submit-btn{
+	margin-left: 18px;
+}
+
+#HG{
+	margin-left:1.5%;
+	width: 94%;
+}
+#stars{
+	margin-left:1.5%;
+	width:94%;
+}
+#min{
+	width:48%;
+}
+#max{
+	width:48%;
+}
+
+#amenities{
+	margin-left:1.5%;
+	margin-bottom:2%;
+	width:94%;
+}
+
+.sidenav {
+    height: 80%;
+    width: 24%;
+    position: fixed;
+    z-index: 0;
+    top: 20.4%;
+    left: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 0.8%;
+}
+
+.sidenav a {
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.main {
+    margin-left: 24%; /* Same as the width of the sidenav */
+    font-size: 20px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+.mystyle {
+    width: 40.8%;
+    position: fixed;
+    z-index: 0;
+    left: 20px;
+    background-color: #333;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+.two-col-special {
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.two-col-special li {
+    display: inline-block;
+    width: 45%;
+    margin: 0;
+    padding: 0;
+    vertical-align: top; /* In case multi-word categories form two lines */
+}
+.two-col-special li:before {
+    content: '*';
+    padding: 5px;
+    margin-right: 5px; /* you can tweak the gap */
+    color: blue;
+    display: inline-block;
+}
+
+/* Customize the label (the container) */
+.amenity-container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.amenity-container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.amenity-checkmark {
+  position: absolute;
+  top: 50px;
+  left: 20px;
+  height: 35px;
+  width: 35px; 
+  background-color:  #cce6ff;
+}
+
+
+/* On mouse-over, add a grey background color */
+.amenity-container:hover input ~ .amenity-checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.amenity-container input:checked ~ .amenity-checkmark {
+  background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.amenity-checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.amenity-container input:checked ~ .amenity-checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.amenity-container .amenity-checkmark:after {
+  left: 14px;
+  top: 13px;
+  width: 6px;
+  height: 12px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+#book-btn{
+	background-color: #333; 
+    border: none;
+	color: #f2f2f2;
+    padding: 12px 30px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    cursor: pointer;
+    margin-left: 20%;
+    margin-top: 10px;
+}
+
+#book-btn:hover {
+    background-color: #cccccc;
+}
+
+#Accs {
+	width:60%;
+	margin:auto;
+	padding:10px;
+	font-family:Arial;
+}
+	
