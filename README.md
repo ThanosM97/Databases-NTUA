@@ -3,6 +3,6 @@ This repository hosts the code of the HotelFinder website. It's created as a sem
 
 The files ProjectReport.pdf and Sql.pdf are written in greek since they had to be handed for evaluation.
 
-Partners: <br />
+Collaborators: <br />
 Antoniadis Panos <br />
 Bazotis Nikos
